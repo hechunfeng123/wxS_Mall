@@ -1,0 +1,18 @@
+<view>
+    <!-- 主题 -->
+    <image class="top-theme" src="{{themeA.entrance_img}}"></image>
+    <!-- banner图 -->
+    <swiper class="swiper"
+     indicator-dots="{{true}}" 
+     indicator-active-color="#157658" 
+     autoplay
+     circular >
+        <block wx:for="{{bannerB.items}}" >
+            <swiper-item>
+                <image class="swiper" src="{{item.img}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 六宫格 -->
+    <s-category-grid grid="{{grid}}"></s-category-grid>
+</view>
